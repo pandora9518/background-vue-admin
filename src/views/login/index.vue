@@ -132,7 +132,7 @@ const rules = {
       <el-col :span="12" :xs="0"></el-col>
       <el-col :span="12" :xs="24">
         <el-card class="login_form">
-          <h1>Vue-Admin</h1>
+          <h1>小熊运营平台</h1>
           <el-form :model="loginForm" :rules="rules" ref="loginForms">
             <el-form-item prop="username">
               <el-input
@@ -192,6 +192,7 @@ const rules = {
   background: url('@/assets/images/background.jpg') no-repeat;
   background-size: cover;
   position: fixed;
+
   .login_form {
     position: relative;
     width: 55%;
@@ -199,6 +200,7 @@ const rules = {
     left: 10vw;
     padding: 10px;
     background: transparent;
+
     h1 {
       background: linear-gradient(to right, blue, rgb(35, 60, 70));
       -webkit-background-clip: text;
@@ -209,14 +211,17 @@ const rules = {
       margin-bottom: 40px;
       margin-top: -10px;
     }
+
     .login_btn {
       width: 100%;
     }
   }
 }
+
 .el-card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 :deep(.el-input-group__append, .el-input-group__prepend) {
   padding: 0;
 }
